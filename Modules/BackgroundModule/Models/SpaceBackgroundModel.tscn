@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2ugkrry2cjhn"]
+
+[sub_resource type="Gradient" id="Gradient_lmmtr"]
+colors = PackedColorArray(0.33306, 0.1932, 0.42, 1, 0.178833, 0, 0.29, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_04uxc"]
+gradient = SubResource("Gradient_lmmtr")
+fill_from = Vector2(0.53211, 1)
+fill_to = Vector2(0.513761, 0)
+
+[node name="SpaceBackgroundModel" type="Node2D"]
+
+[node name="Background1Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(20, 20)
+texture = SubResource("GradientTexture2D_04uxc")

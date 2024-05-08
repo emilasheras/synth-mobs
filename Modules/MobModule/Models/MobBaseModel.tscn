@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bin6ytjipjeod"]
+
+[ext_resource type="Script" path="res://Modules/MobModule/Models/MobBaseModel.gd" id="1_rrvi6"]
+
+[node name="MobBaseModel" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_rrvi6")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0.751405, 0.594417, 1)
