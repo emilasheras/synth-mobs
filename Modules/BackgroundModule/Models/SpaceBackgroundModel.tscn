@@ -1,15 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2ugkrry2cjhn"]
+[gd_scene load_steps=4 format=3 uid="uid://b2ugkrry2cjhn"]
+
+[ext_resource type="Script" path="res://Modules/BackgroundModule/Models/Background1Sprite2D.gd" id="1_ujfq8"]
 
 [sub_resource type="Gradient" id="Gradient_lmmtr"]
-colors = PackedColorArray(0.33306, 0.1932, 0.42, 1, 0.178833, 0, 0.29, 1)
+colors = PackedColorArray(0.133507, 0.0643075, 0.176336, 1, 0.0884888, 8.75619e-05, 0.15665, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_04uxc"]
 gradient = SubResource("Gradient_lmmtr")
+width = 1
+height = 1
 fill_from = Vector2(0.53211, 1)
 fill_to = Vector2(0.513761, 0)
 
 [node name="SpaceBackgroundModel" type="Node2D"]
 
-[node name="Background1Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(20, 20)
+[node name="BackgroundSprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.28125, 0.304688)
 texture = SubResource("GradientTexture2D_04uxc")
+script = ExtResource("1_ujfq8")
