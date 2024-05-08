@@ -8,5 +8,6 @@
 script = SubResource("GDScript_5qhw0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
 
 [node name="Game1Space" parent="." instance=ExtResource("1_bxo80")]

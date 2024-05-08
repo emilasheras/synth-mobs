@@ -16,3 +16,6 @@ func scaleToCover(screenWidth: float, screenHeight: float):
 
 	# Apply the uniform scale factor to maintain the aspect ratio
 	self.scale = Vector2(scaleFactor, scaleFactor)
+	
+	# Move to the center of the camera vey todo: add a singleton static access for this values
+	self.position = Vector2(960, 540)
