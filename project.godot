@@ -22,7 +22,7 @@ MobManager="*res://Modules/MobModule/Models/MobManager.gd"
 [display]
 
 window/size/viewport_width=900
-window/size/viewport_height=800
+window/size/viewport_height=600
 window/size/initial_position_type=2
 window/size/initial_screen=2
 window/stretch/mode="viewport"
