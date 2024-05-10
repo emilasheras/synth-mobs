@@ -8,6 +8,7 @@ var timer = 0.0  # Timer to track time since last change
 
 func _ready():
 	randomize()  # Ensures that the random generator seed is unique
+	apply_random_velocity()
 
 func _physics_process(delta):
 	timer += delta
