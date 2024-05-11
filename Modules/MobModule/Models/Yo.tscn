@@ -1,17 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://dcymhx5mnfrdj"]
+[gd_scene load_steps=3 format=3 uid="uid://dcymhx5mnfrdj"]
 
 [ext_resource type="PackedScene" uid="uid://bin6ytjipjeod" path="res://Modules/MobModule/Models/MobBaseModel.tscn" id="1_6e7uw"]
 [ext_resource type="Script" path="res://Modules/MobModule/Models/YoPolygon2D.gd" id="2_k4gaa"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_08462"]
-radius = 20.0
-
-[node name="Po" type="Node2D"]
+[node name="Yo" type="Node2D"]
 
 [node name="MobBaseModel" parent="." instance=ExtResource("1_6e7uw")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MobBaseModel"]
-shape = SubResource("CircleShape2D_08462")
 
 [node name="Polygon2D" type="Polygon2D" parent="MobBaseModel"]
 script = ExtResource("2_k4gaa")

@@ -1,11 +1,11 @@
 extends RigidBody2D
 
+### MOVEMENT SCRIPT
 const MIN_SPEED = 20
 const MAX_SPEED = 40
 var change_interval = 0.250  # Time in seconds between direction/speed changes
 var timer = 0.0  # Timer to track time since last change
 var centerBias = 0.1 # How strongly the mob is biased towards the center (0-1)
-
 
 func _ready():
 	randomize()  # Ensures that the random generator seed is unique

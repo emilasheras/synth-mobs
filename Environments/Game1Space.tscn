@@ -1,14 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://hkwkahh31ehx"]
+[gd_scene load_steps=3 format=3 uid="uid://hkwkahh31ehx"]
 
 [ext_resource type="Script" path="res://Environments/Game1Space.gd" id="1_e610e"]
 [ext_resource type="PackedScene" uid="uid://b2ugkrry2cjhn" path="res://Modules/BackgroundModule/Models/SpaceBackgroundModel.tscn" id="1_fx53d"]
-
-[sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_r1pnc"]
 
 [node name="Game1Space" type="Node2D"]
 script = ExtResource("1_e610e")
 
 [node name="SpaceBackgroundModel" parent="." instance=ExtResource("1_fx53d")]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = SubResource("AudioStreamGenerator_r1pnc")

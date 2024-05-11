@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://3442fpwt8owq"]
+
+[ext_resource type="PackedScene" uid="uid://dq8wsm650lmis" path="res://Modules/MobModule/Models/Gi.tscn" id="1_onccp"]
+
+[node name="SequencerTesting" type="Node2D"]
+
+[node name="Gi" parent="." instance=ExtResource("1_onccp")]
+position = Vector2(479, 330)

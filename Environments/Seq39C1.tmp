@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://3442fpwt8owq"]
+
+[ext_resource type="Script" path="res://Environments/SequencerTesting.gd" id="1_py5ul"]
+[ext_resource type="Script" path="res://Environments/Node2D.gd" id="2_yhmne"]
+
+[sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_j14pn"]
+
+[node name="SequencerTesting" type="Node2D"]
+script = ExtResource("1_py5ul")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("2_yhmne")
+
+[node name="TestAudioPlayer" type="AudioStreamPlayer2D" parent="Node2D"]
+stream = SubResource("AudioStreamGenerator_j14pn")

@@ -1,13 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://bin6ytjipjeod"]
+[gd_scene load_steps=5 format=3 uid="uid://bin6ytjipjeod"]
 
 [ext_resource type="Script" path="res://Modules/MobModule/Models/MobBaseModel.gd" id="1_rrvi6"]
+[ext_resource type="Script" path="res://Modules/MobModule/Models/MobSoundPlayer.gd" id="2_g7sff"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5gpvq"]
+radius = 15.0
+
+[sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_v0kor"]
+mix_rate = 11025.0
 
 [node name="MobBaseModel" type="RigidBody2D"]
 gravity_scale = 0.0
 script = ExtResource("1_rrvi6")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(0, 0.751405, 0.594417, 1)
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5gpvq")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamGenerator_v0kor")
+script = ExtResource("2_g7sff")
